@@ -519,7 +519,7 @@ nav .nav_buttons img{
   height: 100%;
   overflow: auto;
   /*background-color: rgba(2, 15, 89, 0.4);*/
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   display: none;
 }
 
@@ -539,7 +539,7 @@ nav .nav_buttons img{
 
 #extended_title{
   width: inherit;
-  background-color: #4B64F2;
+  background-color: #11468C;
   font-size: 25px;
   padding: 10px 15px;
   display: flex;
