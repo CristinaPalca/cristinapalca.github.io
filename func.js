@@ -67,9 +67,6 @@ function popup_project(e){
   let project_link = tmp_cont.querySelector("a.project_link").href;
   let repository_link = tmp_cont.querySelector("a.repository_link").href;
   let project_image = tmp_cont.querySelector(".image_wrapper img").src;
-  console.log(project_image);
-  console.log(project_name + " " + project_skills);
-
   let popup = document.querySelector("#extended_container");
   let popup_title = popup.querySelector("#extended_title span");
   let popup_list = popup.querySelector("ul");
