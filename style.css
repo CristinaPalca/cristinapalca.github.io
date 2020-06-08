@@ -38,8 +38,6 @@ body:before{
   font-family: 'Julius Sans One', sans-serif;
 }
 
-
-
 /* Navbar */
 
 nav{
@@ -350,6 +348,12 @@ nav .nav_buttons img{
   text-align: center;
 }
 
+#portfolio_id{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .element{
   text-align: center;
@@ -496,16 +500,17 @@ nav .nav_buttons img{
 }
 
 @media (min-width: 992px){
-  /* 4 columns */
+  /* 3 columns */
   .portfolio_container{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vw 20vw;
+    width: auto;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px;
   }
   .project_container{
-    height: 20vw;
+    height: 200px;
   }
   .image_wrapper{
-    padding: 0 0 20vw 0;
+    padding: 0 0 200px 0;
   }
 }
 
