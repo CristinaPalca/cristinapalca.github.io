@@ -64,23 +64,32 @@ function popup_project(e){
   }
   let project_name = tmp_cont.querySelector(".project_title").innerHTML;
   let project_skills = tmp_cont.querySelector("ul").innerHTML;
-  let project_link = tmp_cont.querySelector("a.project_link").href;
-  let repository_link = tmp_cont.querySelector("a.repository_link").href;
+  let project_link = tmp_cont.querySelector("a.project_link");
+  let repository_link = tmp_cont.querySelector("a.repository_link");
   let project_image = tmp_cont.querySelector(".image_wrapper img").src;
   let popup = document.querySelector("#extended_container");
   let popup_title = popup.querySelector("#extended_title span");
   let popup_list = popup.querySelector("ul");
+
   let popup_project_link = popup.querySelector("#project_link a");
+
+
   let popup_repository_link = popup.querySelector("#repository_link a");
   let popup_image = popup.querySelector("#extended_image_wrapper img");
   let popup_image_link = popup.querySelector("#right_column a");
 
   popup_title.innerHTML = project_name;
   popup_list.innerHTML = project_skills;
-  popup_project_link.href = project_link;
-  popup_repository_link.href = repository_link;
+  popup_repository_link.href = repository_link.href;
+  if(project_link.classList.contains('no_project')){
+    console.log("no project");
+    popup_project_link.parentNode.style.display = "none";
+    popup_image_link.href = popup_repository_link.href;
+  }else{
+    popup_project_link.href = project_link.href;
+    popup_image_link.href = project_link;
+  }
   popup_image.src = project_image;
-  popup_image_link.href = project_link;
   popup.style.display = "block";
 
 }
