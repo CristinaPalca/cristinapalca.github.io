@@ -82,7 +82,6 @@ function popup_project(e){
   popup_list.innerHTML = project_skills;
   popup_repository_link.href = repository_link.href;
   if(project_link.classList.contains('no_project')){
-    console.log("no project");
     popup_project_link.parentNode.style.display = "none";
     popup_image_link.href = popup_repository_link.href;
   }else{
