@@ -64,8 +64,8 @@ function popup_project(e){
   }
   let project_name = tmp_cont.querySelector(".project_title").innerHTML;
   let project_skills = tmp_cont.querySelector("ul").innerHTML;
-  let project_link = tmp_cont.querySelector("a.project_link");
-  let repository_link = tmp_cont.querySelector("a.repository_link");
+  let project_link = tmp_cont.querySelector(".project_link");
+  let repository_link = tmp_cont.querySelector(".repository_link");
   let project_image = tmp_cont.querySelector(".image_wrapper img").src;
   let popup = document.querySelector("#extended_container");
   let popup_title = popup.querySelector("#extended_title span");
@@ -85,8 +85,9 @@ function popup_project(e){
     popup_project_link.parentNode.style.display = "none";
     popup_image_link.href = popup_repository_link.href;
   }else{
+    popup_project_link.parentNode.style.display = "block";
     popup_project_link.href = project_link.href;
-    popup_image_link.href = project_link;
+    popup_image_link.href = project_link.href;
   }
   popup_image.src = project_image;
   popup.style.display = "block";
