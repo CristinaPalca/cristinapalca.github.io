@@ -125,7 +125,7 @@ header{
   text-align: center;
 }
 #name{
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 5px;
 }
 #position{
@@ -160,14 +160,14 @@ header{
 
 @media(min-width: 576px){
   #name{
-    font-size: 25px;
+    font-size: 20px;
   }
   #position{
-    font-size: 40px;
+    font-size: 35px;
   }
   #main_info>button{
-    padding: 15px 25px;
-    font-size: 22px;
+    padding: 10px 20px;
+    font-size: 20px;
   }
 }
 
